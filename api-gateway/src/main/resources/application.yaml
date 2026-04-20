@@ -1,0 +1,23 @@
+#spring:
+#  cloud:
+#    gateway:
+#      server:
+#        webflux:
+#          routes:
+#            - id: r1
+#              uri: lb://CUSTOMER-SERVICE
+#              predicates:
+#                - Path=/customers/**
+#              filters:
+#                    - StripPrefix=1
+#            - id: r2
+#              uri: lb://PRODUCT-SERVICE
+#              predicates:
+#                - Path=/products/**
+#              filters:
+#                    - StripPrefix=1
+#  application:
+#    name: api-gateway
+#server:
+#  port: 8888
+#
