@@ -16,9 +16,9 @@ public interface CustomerRestClient {
         exception.getStackTrace();
         Customer customer = new Customer();
         customer.setId(id);
-        customer.setFirstname("yacibne");
-        customer.setLastname("sarr");
-        customer.setEmail("sarr@gmeial.com");
+        customer.setFirstname("user deafult");
+        customer.setLastname("default user");
+        customer.setEmail("default@gmail.com");
         return customer;
 
     }
